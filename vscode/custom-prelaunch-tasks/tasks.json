@@ -1,0 +1,14 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+        "label": "getenv",
+        "type":"process",
+        "command": "${workspaceFolder}/scripts/run.sh",
+        "presentation": {
+            "reveal": "always",
+            "panel": "new"
+          }
+        }
+    ]
+}
