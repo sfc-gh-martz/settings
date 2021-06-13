@@ -1,0 +1,17 @@
+// launch.json is for the debugger 
+// set the interpreter using the virtual enviroment (managed with pyenv)
+// use a named prelaunch task from tasks.json
+
+{   "version": "0.2.0",
+    "configurations": [
+        {
+            "type":"python",
+            "name": "valhalla-migration",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "python": "/Users/martz/.pyenv/versions/3.7.5/envs/valhalla-migration/bin/python",
+            "preLaunchTask": "getenv"
+        }
+    ]
+}
